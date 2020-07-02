@@ -1,6 +1,5 @@
 package com.deadinside;
 
-
 import com.deadinside.business.Request;
 import com.deadinside.business.model.Response;
 import com.google.gson.Gson;
@@ -21,5 +20,7 @@ public class Main {
 
 
         //Arrays.stream(responses).forEach(System.out::println);
+
     }
 }
+ 
