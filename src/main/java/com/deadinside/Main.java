@@ -58,7 +58,6 @@ public class Main {
 
         in.nextLine();
 
-        //Arrays.stream(responses).forEach(System.out::println);
 
     }
 }
