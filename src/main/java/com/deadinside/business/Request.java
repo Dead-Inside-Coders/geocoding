@@ -19,13 +19,9 @@ public class Request
     private final CloseableHttpClient httpClient = HttpClients.createDefault();
 
     public String sendRequest(String hostPath,String servicePath,String apiKey,String location) throws IOException {
-        HttpGet httpGet = new HttpGet(hostPath+servicePath+"?key="+apiKey+"&location="+ URLEncoder.encode(location,"UTF-8"));
+        HttpGet httpGet = new HttpGet(hostPath+servicePath+"?key="+apiKey+"&location="+ URLEncoder.encode(location,"UTF-8")+"&maxResults=1");
         CloseableHttpResponse  response = httpClient.execute(httpGet);
         return EntityUtils.toString(response.getEntity());
 
-    }
-    public String sendRequest(String hostPath,String servicePath,String apiKey,String street,String city,String state,String postalCode)
-    {
-        return null;
     }
 }

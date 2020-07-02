@@ -17,4 +17,10 @@ public class LatLng
     public double getLng() {
         return lng;
     }
+
+    @Override
+    public String toString() {
+        return "долгота = " + lat + "\n"+
+                "широта = " + lng ;
+    }
 }
